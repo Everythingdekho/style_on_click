@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <style>
-        header{
+       header{
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -27,6 +27,7 @@ color:white;
 font-size:16px;
 font-weight:bold;
 }
+        
 /* RESET */
 
 *{
@@ -161,8 +162,47 @@ font-weight:bold;
 footer a:hover{
 color:yellow;
 }
+@media (max-width:768px){
 
-</style>
+header{
+flex-direction:column;
+text-align:center;
+}
+
+.logo img{
+height:70px;
+width:70px;
+}
+
+nav ul{
+flex-direction:column;
+}
+
+nav ul li{
+margin:8px 0;
+}
+
+h1{
+font-size:28px;
+}
+
+.content h1{
+font-size:30px;
+}
+
+.content p{
+font-size:16px;
+}
+
+.login-box,
+.contact-box{
+width:90%;
+max-width:400px;
+}
+
+}
+
+    </style>
 
     <meta charset="UTF-8">
     
