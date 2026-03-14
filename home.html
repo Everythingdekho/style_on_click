@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:px 60px;
+background:black;
+}
+
+.logo img{
+border-radius:50%;
+}
+
+/* NAVBAR */
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin:0 20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:yellow;
+}
+
+/* HERO SECTION */
+
+main{
+position:relative;
+height:600px;
+overflow:hidden;
+}
+
+main img{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+/* DARK OVERLAY */
+
+main::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+z-index:-1;
+}
+
+/* TEXT OVER IMAGE */
+
+.content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+}
+
+.content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.content p{
+font-size:22px;
+}
+
+/* OUR OFFERS SECTION */
+
+div{
+padding:60px 120px;
+line-height:1.8;
+}
+
+div h1{
+font-size:40px;
+margin-bottom:20px;
+text-align:center;
+}
+
+div p{
+font-size:18px;
+margin-bottom:20px;
+text-align:justify;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+footer a:hover{
+color:yellow;
+}
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style on click-get style in one click</title>
+
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.jpg.png" alt="" height="100px" width="100px"></div>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Our Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+<main>
+    <img src="bc.jpg" alt="" height="30%" width="100%">
+
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>Get amazing styles in one click</p>
+    </div>
+</main>
+<section>
+<div >
+        <h1>Our Offers</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ea, neque eligendi recusandae asperiores cumque quidem eveniet magni dolor adipisci sequi natus esse ad fugiat molestias, ipsum molestiae nemo in saepe. Est, dolores odit.</p>
+</div>
+<div>
+    <h1>Our Salon</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae tempora fuga aliquid animi cum debitis? Mollitia placeat deserunt magni asperiores tempora cum quam libero quo totam ipsum! Saepe, voluptatibus!</p>
+</div>
+
+</section>
+<footer>
+    <a href="" target="_blank">instagram</a>
+</footer>
+
+</body>
+</html>
