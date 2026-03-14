@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <style>
-       <style>
 
 /* RESET */
 
@@ -13,29 +12,18 @@ box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
 
-/* BODY */
-
-body{
-background:#f4f4f4;
-}
-
 /* HEADER */
 
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:10px 40px;
+padding:px 60px;
 background:black;
-flex-wrap:wrap;
 }
-
-/* LOGO */
 
 .logo img{
 border-radius:50%;
-height:80px;
-width:80px;
 }
 
 /* NAVBAR */
@@ -43,11 +31,10 @@ width:80px;
 nav ul{
 display:flex;
 list-style:none;
-flex-wrap:wrap;
 }
 
 nav ul li{
-margin:10px 15px;
+margin:0 20px;
 }
 
 nav ul li a{
@@ -66,7 +53,7 @@ color:yellow;
 
 main{
 position:relative;
-height:80vh;
+height:600px;
 overflow:hidden;
 }
 
@@ -93,7 +80,7 @@ background:rgba(0,0,0,0.5);
 z-index:-1;
 }
 
-/* HERO TEXT */
+/* TEXT OVER IMAGE */
 
 .content{
 position:absolute;
@@ -102,101 +89,48 @@ left:50%;
 transform:translate(-50%,-50%);
 text-align:center;
 color:white;
-padding:20px;
 }
 
 .content h1{
-font-size:clamp(32px,5vw,60px);
+font-size:60px;
 margin-bottom:20px;
 }
 
 .content p{
-font-size:20px;
+font-size:22px;
 }
 
-/* PAGE HEADINGS */
+/* OUR OFFERS SECTION */
 
-h1{
-text-align:center;
-margin-top:40px;
+div{
+padding:60px 120px;
+line-height:1.8;
+}
+
+div h1{
 font-size:40px;
+margin-bottom:20px;
+text-align:center;
 }
 
-/* TEXT CONTENT */
-
-p{
-max-width:900px;
-margin:20px auto;
+div p{
 font-size:18px;
-line-height:1.7;
-padding:0 20px;
+margin-bottom:20px;
 text-align:justify;
-}
-
-/* FORM / CONTACT / LOGIN BOX */
-
-.login-box,
-.contact-box{
-width:90%;
-max-width:400px;
-margin:40px auto;
-padding:30px;
-background:white;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-/* FORM */
-
-form{
-display:flex;
-flex-direction:column;
-}
-
-label{
-margin-top:10px;
-font-weight:bold;
-}
-
-input,
-select{
-margin-top:5px;
-padding:10px;
-border:1px solid #ccc;
-border-radius:5px;
-font-size:16px;
-}
-
-/* BUTTON */
-
-button{
-margin-top:20px;
-padding:10px;
-background:black;
-color:white;
-border:none;
-border-radius:5px;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-background:#444;
 }
 
 /* FOOTER */
 
 footer{
 background:black;
-color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
 }
 
 footer a{
 color:white;
 text-decoration:none;
+font-size:18px;
 font-weight:bold;
 }
 
@@ -204,48 +138,11 @@ footer a:hover{
 color:yellow;
 }
 
-/* MOBILE RESPONSIVE */
-
-@media (max-width:768px){
-
-header{
-flex-direction:column;
-text-align:center;
-}
-
-.logo img{
-height:70px;
-width:70px;
-margin-bottom:10px;
-}
-
-nav ul{
-flex-direction:column;
-}
-
-nav ul li{
-margin:8px 0;
-}
-
-.content h1{
-font-size:32px;
-}
-
-.content p{
-font-size:16px;
-}
-
-}
-
 </style>
 
-
-    </style>
-
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>style on click-get style in one click</title>
+    <title>{<img src="logo.jpg.png" alt="">}style on click-get style in one click</title>
 
 </head>
 <body>
@@ -254,7 +151,7 @@ font-size:16px;
         
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="service.html">Our Service</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -288,4 +185,5 @@ font-size:16px;
 </footer>
 
 </body>
+</html>
 </html>
